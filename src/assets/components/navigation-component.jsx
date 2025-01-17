@@ -69,16 +69,16 @@ function NavigationComponent() {
 
         <div className="info">
           <i className="fas fa-phone"></i>
-          <h3>phone number</h3>
-          <p>+123-456-7890</p>
-          <p>+111-222-3333</p>
+          <h3>Telefono</h3>
+          <p>11-3298-6884</p>
+          <p>11-6211-1611</p>
         </div>
 
         <div className="info">
           <i className="fas fa-envelope"></i>
-          <h3>email address</h3>
-          <p>shaikhanas@gmail.com</p>
-          <p>anasbhai@gmail.com</p>
+          <h3>email</h3>
+          <p>smive.reparaciones@gmail.com</p>
+          <p>smive@reparaciones.com</p>
         </div>
 
         {/* <div className="info">

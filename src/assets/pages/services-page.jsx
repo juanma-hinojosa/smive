@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { servicesList } from "../js/services-list";
 
 function ServicesPage() {
@@ -10,14 +10,14 @@ function ServicesPage() {
         <br />
         <div className="box-container">
           {servicesList.map((service, index) => (
-            <Link to={`/services/${service.name}`} key={index} className="box">
+            <div data-aos='zoom-in' key={index} className="box">
               <img
                 src={`/images/${service.img}`}
                 alt="service picture"
               />
               <h3>{service.name}</h3>
               <p>{service.resume}</p>
-            </Link>
+            </div>
           ))}
         </div>
       </div>

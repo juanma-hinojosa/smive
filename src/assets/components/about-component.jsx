@@ -19,11 +19,24 @@ function AboutComponent(props) {
         </div>
 
         <div className="content">
-          <h3>SMIVE: Construcción de confianza, mantenimiento de calidad!</h3>
-          <p>
-          En SMIVE, nos especializamos en ofrecer soluciones integrales de refacciones y mantenimiento que garantizan la durabilidad y eficiencia de sus proyectos de construcción. Nuestro compromiso con la excelencia se refleja en cada detalle, desde la selección de materiales de alta calidad hasta la implementación de técnicas innovadoras. Con un equipo de expertos altamente capacitados, aseguramos que cada obra no solo cumpla, sino que supere los estándares de la industria, brindando resultados confiables y sostenibles a largo plazo. Confíe en SMIVE para construir con calidad y mantener con efectividad.
+          <h3 data-aos="fade-up">
+            SMIVE: Construcción de confianza, mantenimiento de calidad!
+          </h3>
+          <p data-aos="fade-up">
+            En SMIVE, nos especializamos en ofrecer soluciones integrales de
+            refacciones y mantenimiento que garantizan la durabilidad y
+            eficiencia de sus proyectos de construcción. Nuestro compromiso con
+            la excelencia se refleja en cada detalle, desde la selección de
+            materiales de alta calidad hasta la implementación de técnicas
+            innovadoras. Con un equipo de expertos altamente capacitados,
+            aseguramos que cada obra no solo cumpla, sino que supere los
+            estándares de la industria, brindando resultados confiables y
+            sostenibles a largo plazo. Confíe en SMIVE para construir con
+            calidad y mantener con efectividad.
           </p>
-          <Link to='/projects' className="btn">Proyectos</Link>
+          <Link to="/projects" className="btn">
+            Proyectos
+          </Link>
         </div>
       </div>
 
@@ -36,7 +49,8 @@ function AboutComponent(props) {
                 end={box.fin}
                 duration={5.0}
                 enableScrollSpy={false}
-              />+
+              />
+              +
             </h3>
             <p>{box.p}</p>
           </div>

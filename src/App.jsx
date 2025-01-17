@@ -14,14 +14,20 @@ import FooterComponent from "./assets/components/footer-component";
 import ScrollTop from "./assets/components/scroll-top";
 import { Toaster } from "react-hot-toast";
 import FooterLinkComponent from "./assets/components/footer-links-component";
-
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init({
+  disable: false,
+  once: true
+});
 function App() {
   return (
     <>
       <BrowserRouter>
         <ScrollTop />
         <NavigationComponent />
-        <Toaster position="top-right"  />
+        <Toaster position="top-right" />
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route path="/contact" element={<ContactPage />} />
