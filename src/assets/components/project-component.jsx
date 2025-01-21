@@ -9,7 +9,7 @@ function ProjectComponet() {
   return (
     <div className="projects-container">
       <section className="projects" id="projects">
-        <h1 className="heading"> our projects </h1>
+        <h1 className="heading"> Proyectos y Obras </h1>
 
         <div className="box-container">
           {projectsList.map((project) => (

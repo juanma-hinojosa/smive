@@ -15,7 +15,7 @@ function AboutComponent(props) {
 
       <div className="row">
         <div className="video">
-          <video src={`/images/${props.src}`} loop muted autoPlay></video>
+          <video src={props.src} loop muted autoPlay></video>
         </div>
 
         <div className="content">

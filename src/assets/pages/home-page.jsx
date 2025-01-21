@@ -7,6 +7,7 @@ import ProjectComponet from "../components/project-component";
 import SlideComponent from "../components/slide-component";
 import { TitleDinamic } from "../js/title-list";
 import ServicesPage from "./services-page";
+import AboutVid from '/images/about-vid.mp4'
 
 function HomePage() {
   TitleDinamic('SMIVE')
@@ -16,7 +17,7 @@ function HomePage() {
         <SlideComponent />
       </section>
 
-      <AboutComponent src="about-vid.mp4" />
+      <AboutComponent src={AboutVid} />
       <ServicesPage />
       <ProjectComponet />
       <ClientsComponents />

@@ -12,6 +12,7 @@ import "swiper/css/pagination";
 import AboutComponent from "../components/about-component";
 import ProjectComponet from "../components/project-component";
 import { TitleDinamic } from "../js/title-list";
+import VideoNosotros from '/images/project-vid.mp4'
 
 function ProjectPage() {
   // const sliders = [
@@ -73,7 +74,7 @@ function ProjectPage() {
       </Swiper>
     </section> */}
     <AboutComponent 
-      src='project-vid.mp4'
+      src={VideoNosotros}
     />
     <ProjectComponet />
 
