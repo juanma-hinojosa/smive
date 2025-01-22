@@ -211,8 +211,8 @@ export const projectsList = [
     },
     projectDesc: [
       {
-        category: "Hidrolavado y limpieza",
-        desc: "Se realizó un trabajo de hidrolavado en cenefas, aleros, paredes y granito, utilizando equipos de alta presión para eliminar suciedad, manchas y residuos acumulados. Particularmente, el granito presentó acumulación de sarro, lo que requirió un tratamiento especializado con limpieza ácida para asegurar la eliminación completa de las incrustaciones. El proceso garantizó una restauración efectiva de la apariencia original de las superficies, dejándolas limpias y libres de impurezas.",
+        category: "Estado del lugar",
+        desc: "Se encontraba en el lugar mucha tierra acomulada, telaraña y polvo en aleros, cenefas y canaletas. Las estructuas con granito en diferentes lugares presentaba salitre y en el ladrillo exterior",
         listImg: [
           "projects/el-dorado/project-1.jpeg",
           "projects/el-dorado/project-2.jpeg",
@@ -229,11 +229,31 @@ export const projectsList = [
         ],
       },
       {
+        category: "Hidrolavado y limpieza",
+        desc: "Se realizó un trabajo de hidrolavado en cenefas, aleros, paredes y granito, utilizando equipos de alta presión para eliminar suciedad, manchas y residuos acumulados. Particularmente, el granito presentó acumulación de sarro, lo que requirió un tratamiento especializado con limpieza ácida para asegurar la eliminación completa de las incrustaciones. El proceso garantizó una restauración efectiva de la apariencia original de las superficies, dejándolas limpias y libres de impurezas.",
+        listImg: [
+          "projects/el-dorado/project-1.jpeg",
+          "projects/el-dorado/project-13.jpeg",
+          "projects/el-dorado/project-14.jpeg",
+          "projects/el-dorado/project-15.jpeg",
+          "projects/el-dorado/project-16.jpeg",
+          "projects/el-dorado/project-17.jpeg",
+          "projects/el-dorado/project-18.jpeg",
+          "projects/el-dorado/project-19.jpeg",
+          "projects/el-dorado/project-20.jpeg",
+          "projects/el-dorado/project-21.jpeg",
+        ],
+      },
+      {
         category: "Pintura",
         desc: "Después de completar el hidrolavado y la limpieza del granito, se inició el trabajo de pintura con látex exterior en columnas, zócalos y la aguja insignia. Se aplicaron varias capas de pintura para asegurar un acabado uniforme y duradero, mejorando la estética y protegiendo las superficies contra las inclemencias del tiempo. Este proceso contribuyó a renovar y embellecer la estructura, brindándole un aspecto fresco y revitalizado.",
         listImg: [],
       },
-      { category: "Limpieza", desc: "Luego de haber finalizado los trabajos en pintura se realizo una limpieza profunda buscando toda posible mancha de pintura existente para su remocion de la superficie", listImg: [] },
+      {
+        category: "Limpieza",
+        desc: "Luego de haber finalizado los trabajos en pintura se realizo una limpieza profunda buscando toda posible mancha de pintura existente para su remocion de la superficie",
+        listImg: [],
+      },
     ],
   },
 ];
