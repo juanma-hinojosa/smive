@@ -9,7 +9,6 @@ import RouteDinamicProject from "./assets/pages/RDProject";
 import { projectsList } from "./assets/js/projects-list";
 import ErrorPage from "./assets/pages/error-page";
 import ServicesPage from "./assets/pages/services-page";
-import RouteDinamicServices from "./assets/pages/RDServices";
 import FooterComponent from "./assets/components/footer-component";
 import ScrollTop from "./assets/components/scroll-top";
 import { Toaster } from "react-hot-toast";
@@ -33,7 +32,6 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
-          <Route path="/services/:id" element={<RouteDinamicServices />} />
           <Route path="/projects" element={<ProjectPage />} />
           <Route
             path="/projects/:id"

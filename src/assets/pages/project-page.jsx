@@ -40,44 +40,10 @@ function ProjectPage() {
   TitleDinamic('Proyectos - SMIVE')
   return (
     <>
-    {/* <section className="home" id="home">
-      <Swiper
-        spaceBetween={30}
-        effect={"fade"}
-        loop={true}
-        navigation={true}
-        autoplay={{
-          delay: 2000,
-          disableOnInteraction: true,
-        }}
-        modules={[EffectFade, Navigation, Autoplay]}
-        className="mySwiper home-slider"
-      >
-        {sliders.map((slide, index) => (
-          <SwiperSlide key={index}>
-            <section
-              className="swiper-slide slide"
-              style={{
-                background: `${slide.img} no-repeat`,
-              }}
-            >
-              <div className="content">
-                <h3>{slide.title}</h3>
-                <p>{slide.paragrafo}</p>
-                <a href="#about" className="btn">
-                  get started
-                </a>
-              </div>
-            </section>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </section> */}
     <AboutComponent 
       src={VideoNosotros}
     />
     <ProjectComponet />
-
     </>
   );
 }

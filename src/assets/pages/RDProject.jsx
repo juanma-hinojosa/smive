@@ -1,8 +1,10 @@
 /* eslint-disable react/prop-types */
 import "../../css/galleria.css";
 import { Link, useParams } from "react-router-dom";
-// import { servicesList } from "../js/services-list";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import placeholder from "/images/smive-logo.jpg";
 
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import LightGallery from "lightgallery/react";
 
 // import styles
@@ -25,13 +27,9 @@ function RouteDinamicProject({ projectsList }) {
 
   const projectDesc = projectsList[id].projectDesc;
 
-  const onInit = () => {
-    console.log("lightGallery has been initialized");
-  };
-
-  // console.log(imgBefore);
-  // console.log(projectsList[id].infoObjs);
-  // console.log(imgLists);
+  // const onInit = () => {
+  //   console.log("lightGallery has been initialized");
+  // };
 
   return (
     <section className="about">
@@ -57,16 +55,18 @@ function RouteDinamicProject({ projectsList }) {
           <div className="box-gallery-grid">
             {project.listImg.map((img, index) => (
               <LightGallery
-                onInit={onInit}
+                // onInit={onInit}
                 speed={500}
                 plugins={[lgThumbnail, lgZoom]}
                 key={index}
               >
                 <a href={`/images/${img}`}>
-                  <img
+                  <LazyLoadImage
                     alt="img2"
                     src={`/images/${img}`}
                     style={{ width: "100%" }}
+                    placeholderSrc={placeholder}
+                    effect="blur"
                   />
                 </a>
               </LightGallery>
