@@ -12,7 +12,8 @@ import "swiper/css/pagination";
 import AboutComponent from "../components/about-component";
 import ProjectComponet from "../components/project-component";
 import { TitleDinamic } from "../js/title-list";
-import VideoNosotros from '/images/project-vid.mp4'
+import VideoNosotros from "/images/project-vid.mp4";
+import { Helmet } from "react-helmet-async";
 
 function ProjectPage() {
   // const sliders = [
@@ -37,13 +38,25 @@ function ProjectPage() {
   //     paragrafo: "Hola mundo como anda todos ahi",
   //   },
   // ];
-  TitleDinamic('Proyectos - SMIVE')
+  TitleDinamic("Proyectos - SMIVE");
   return (
     <>
-    <AboutComponent 
-      src={VideoNosotros}
-    />
-    <ProjectComponet />
+      <Helmet>
+        <meta
+          name="description"
+          content="Proyectos, obras de refacciones y mantenimiento integral en viviendas, edificios, fabricas y sala de reuniones y eventos."
+        />
+        <meta
+          name="keywords"
+          content="Proyectos y Servicios de Albañileria, pintura, plomeria, techos, impermeabilizacion, gas."
+        />
+        <meta
+          name="category"
+          content="SMIVE Refacciones y Mantenimiento. Servicios de Albañileria, pintura, plomeria, techos, impermeabilizacion, gas, construccion en seco."
+        />
+      </Helmet>
+      <AboutComponent src={VideoNosotros} />
+      <ProjectComponet />
     </>
   );
 }

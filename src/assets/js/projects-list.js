@@ -1,9 +1,12 @@
 // puesta en valor todos los rubros
 
+import { generateSlug } from "../../utils/generateSlug";
+
 export const projectsList = [
   {
     id: 0,
     h3: "Amppya",
+    slug: generateSlug('Amppya'),
     p: "Pintura",
     img: "amppya-project.png",
     description:
@@ -44,6 +47,7 @@ export const projectsList = [
   {
     id: 1,
     h3: "Mecanotecnica",
+    slug: generateSlug('Mecanotecnica'),
     p: "Puesta en valor",
     img: "project-2.jpg",
     description:
@@ -95,6 +99,7 @@ export const projectsList = [
     id: 2,
     h3: "Toay",
     p: "Mantenimiento Estufas, calefones y cocinas",
+    slug: generateSlug('Toay'),
     img: "toay-project.png",
     description:
       "En la region de La Pampa, para la corporacion COPIJSUD se solicito el retiro, limpieza, instalacion y verificacion de perdidaas de gas en Estufas, Cocinas y Calefon. El objetivo del trabajo era la puesta en punto de las unidades y el cambio de repuestos de ser necesario. Las unidades se encontraban distribuidas en un total de 9 iglesias. El trabajo duro 3 semanas",
@@ -134,6 +139,7 @@ export const projectsList = [
   {
     id: 3,
     h3: "Quinta Bellos Momentos",
+    slug: generateSlug('Quinta Bellos Momentos'),
     p: "Puesta en valor",
     img: "pilar-project.png",
     description:
@@ -162,6 +168,7 @@ export const projectsList = [
   {
     id: 4,
     h3: "Vicente Lopez",
+    slug: generateSlug('Vicente Lopez'),
     p: "Puesta en valor",
     img: "vicentelopez-project.png",
     description:
@@ -200,6 +207,7 @@ export const projectsList = [
   {
     id: 5,
     h3: "El Dorado",
+    slug: generateSlug('El Dorado'),
     p: "Pintura",
     img: "el-dorado-project.jpeg",
     description:

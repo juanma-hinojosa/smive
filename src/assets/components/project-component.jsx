@@ -2,10 +2,6 @@ import { Link } from "react-router-dom";
 import { projectsList } from "../js/projects-list";
 
 function ProjectComponet() {
-  // function topDom() {
-  //   window.scrollY(0)
-  // }
-
   return (
     <div className="projects-container">
       <section className="projects" id="projects">
@@ -14,7 +10,7 @@ function ProjectComponet() {
         <div className="box-container">
           {projectsList.map((project) => (
             <Link
-              to={`/projects/${project.id}`}
+              to={`/projects/${project.slug}`}
               key={project.id}
               className="box"
               // onClick={topDom}

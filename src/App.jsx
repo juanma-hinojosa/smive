@@ -23,7 +23,7 @@ AOS.init({
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter> 
         <ScrollTop />
         <NavigationComponent />
         <Toaster position="top-right" />
@@ -34,7 +34,7 @@ function App() {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/projects" element={<ProjectPage />} />
           <Route
-            path="/projects/:id"
+            path="/projects/:slug"
             element={<RouteDinamicProject projectsList={projectsList} />}
           />
           <Route path="*/*" element={<ErrorPage />} />
