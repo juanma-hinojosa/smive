@@ -74,7 +74,7 @@ function ContactComponent() {
             ></textarea>
             <ReCAPTCHA
               ref={captcha}
-              sitekey="6LezBvsqAAAAAI0vz6rK-MzpaaxeVIMlt2EomSmV"
+              sitekey="6LdfFfsqAAAAAE0LnrF5AK_sMqIMG8qYBlKzYfat"
               onChange={onChange}
             />
             <input type="submit" value="Enviar" className="btn" />
