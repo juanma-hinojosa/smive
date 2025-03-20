@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "node generate-sitemap.js && vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -13,7 +13,9 @@
     "@emailjs/browser": "^4.4.1",
     "aos": "^2.3.4",
     "axios": "^1.6.8",
+    "fs": "^0.0.1-security",
     "lightgallery": "^2.8.2",
+    "path": "^0.12.7",
     "react": "^18.2.0",
     "react-countup": "^6.5.3",
     "react-dom": "^18.2.0",
@@ -21,6 +23,7 @@
     "react-hot-toast": "^2.5.1",
     "react-lazy-load-image-component": "^1.6.3",
     "react-router": "^6.23.1",
+    "react-google-recaptcha": "^3.1.0",
     "react-router-dom": "^6.23.1",
     "swiper": "^11.1.3"
   },

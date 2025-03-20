@@ -1,11 +1,16 @@
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import toast from "react-hot-toast";
+import ReCAPTCHA from "react-google-recaptcha";
 
 function ContactComponent() {
   // function clearField() {
   //   document.getElementsByClassName('box').value=''
   // }
+  const captcha = useRef(null);
+  function onChange() {
+    console.log(captcha.current.getValue());
+  }
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -17,12 +22,12 @@ function ContactComponent() {
       })
       .then(
         () => {
-          toast.success('Mensaje enviado')
+          toast.success("Mensaje enviado");
           // console.log("SUCCESS!");
         },
         (error) => {
           // console.log("FAILED...", error.text);
-          toast.error('Error',error.text)
+          toast.error("Error", error.text);
         }
       );
   };
@@ -41,9 +46,24 @@ function ContactComponent() {
           ></iframe>
           <form ref={form} onSubmit={sendEmail}>
             <h3>Consultanos</h3>
-            <input type="text" placeholder="Nombre" className="box" name="user_name"/>
-            <input type="email" placeholder="Email" className="box" name="user_email"/>
-            <input type="number" placeholder="Telefono" className="box" name='user_phone'/>
+            <input
+              type="text"
+              placeholder="Nombre"
+              className="box"
+              name="user_name"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              className="box"
+              name="user_email"
+            />
+            <input
+              type="number"
+              placeholder="Telefono"
+              className="box"
+              name="user_phone"
+            />
             <textarea
               name="message"
               placeholder="Consulta"
@@ -52,6 +72,11 @@ function ContactComponent() {
               cols="30"
               rows="10"
             ></textarea>
+            <ReCAPTCHA
+              ref={captcha}
+              sitekey="6LezBvsqAAAAAI0vz6rK-MzpaaxeVIMlt2EomSmV"
+              onChange={onChange}
+            />
             <input type="submit" value="Enviar" className="btn" />
           </form>
         </div>
