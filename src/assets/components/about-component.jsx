@@ -23,16 +23,7 @@ function AboutComponent(props) {
             SMIVE: Construcción de confianza, mantenimiento de calidad!
           </h3>
           <p data-aos="fade-up">
-            En SMIVE, nos especializamos en ofrecer soluciones integrales de
-            refacciones y mantenimiento que garantizan la durabilidad y
-            eficiencia de sus proyectos de construcción. Nuestro compromiso con
-            la excelencia se refleja en cada detalle, desde la selección de
-            materiales de alta calidad hasta la implementación de técnicas
-            innovadoras. Con un equipo de expertos altamente capacitados,
-            aseguramos que cada obra no solo cumpla, sino que supere los
-            estándares de la industria, brindando resultados confiables y
-            sostenibles a largo plazo. Confíe en SMIVE para construir con
-            calidad y mantener con efectividad.
+            {props.text}
           </p>
           <Link to="/projects" className="btn">
             Proyectos

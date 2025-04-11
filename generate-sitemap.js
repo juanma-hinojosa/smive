@@ -2,22 +2,24 @@
 import { writeFileSync } from 'fs';
 import { join } from 'path';
 
-const domain = 'https://tudominio.com';
+const domain = 'https://smive-reparaciones.com/';
 
 const staticRoutes = [
-  '/',
-  '/projects',
-  '/contact'
+  '',
+  'projects',
+  'contact'
 ];
 
 // Simulación de rutas dinámicas (esto debería venir de una API o base de datos)
 const dynamicRoutes = [
-  '/projects/amppya',
-  '/projects/mecanotecnica',
-  '/projects/toay',
-  '/projects/quinta-bellos-momentos',
-  '/projects/vicente-lopez',
-  '/projects/el-dorado'
+  'projects/amppya',
+  'projects/mecanotecnica',
+  'projects/toay',
+  'projects/quinta-bellos-momentos',
+  'projects/vicente-lopez',
+  'projects/el-dorado',
+  'projects/balbin',
+  'projects/monte-grande',
 ];
 
 const allRoutes = [...staticRoutes, ...dynamicRoutes];

@@ -3,7 +3,7 @@ function FooterComponent() {
   return (
     <footer className="footer">
       <div className="credit" style={{fontSize:'15px'}}>
-        Desarollado por <span>Stake Dev's</span> | Todos los derechos reservados
+        Desarollado por <span> <a target="_blank" rel="noopener noreferrer" href="https://stakedev.net/">Stake Dev's</a> </span> | Todos los derechos reservados.
       </div>
     </footer>
   );

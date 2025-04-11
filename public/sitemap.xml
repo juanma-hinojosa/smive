@@ -2,56 +2,68 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
     <url>
-      <loc>https://tudominio.com/</loc>
-      <lastmod>2025-03-16</lastmod>
-      <priority>1.0</priority>
-    </url>
-  
-    <url>
-      <loc>https://tudominio.com/projects</loc>
-      <lastmod>2025-03-16</lastmod>
+      <loc>https://smive-reparaciones.com/</loc>
+      <lastmod>2025-04-06</lastmod>
       <priority>0.8</priority>
     </url>
   
     <url>
-      <loc>https://tudominio.com/contact</loc>
-      <lastmod>2025-03-16</lastmod>
+      <loc>https://smive-reparaciones.com/projects</loc>
+      <lastmod>2025-04-06</lastmod>
       <priority>0.8</priority>
     </url>
   
     <url>
-      <loc>https://tudominio.com/projects/amppya</loc>
-      <lastmod>2025-03-16</lastmod>
+      <loc>https://smive-reparaciones.com/contact</loc>
+      <lastmod>2025-04-06</lastmod>
       <priority>0.8</priority>
     </url>
   
     <url>
-      <loc>https://tudominio.com/projects/mecanotecnica</loc>
-      <lastmod>2025-03-16</lastmod>
+      <loc>https://smive-reparaciones.com/projects/amppya</loc>
+      <lastmod>2025-04-06</lastmod>
       <priority>0.8</priority>
     </url>
   
     <url>
-      <loc>https://tudominio.com/projects/toay</loc>
-      <lastmod>2025-03-16</lastmod>
+      <loc>https://smive-reparaciones.com/projects/mecanotecnica</loc>
+      <lastmod>2025-04-06</lastmod>
       <priority>0.8</priority>
     </url>
   
     <url>
-      <loc>https://tudominio.com/projects/quinta-bellos-momentos</loc>
-      <lastmod>2025-03-16</lastmod>
+      <loc>https://smive-reparaciones.com/projects/toay</loc>
+      <lastmod>2025-04-06</lastmod>
       <priority>0.8</priority>
     </url>
   
     <url>
-      <loc>https://tudominio.com/projects/vicente-lopez</loc>
-      <lastmod>2025-03-16</lastmod>
+      <loc>https://smive-reparaciones.com/projects/quinta-bellos-momentos</loc>
+      <lastmod>2025-04-06</lastmod>
       <priority>0.8</priority>
     </url>
   
     <url>
-      <loc>https://tudominio.com/projects/el-dorado</loc>
-      <lastmod>2025-03-16</lastmod>
+      <loc>https://smive-reparaciones.com/projects/vicente-lopez</loc>
+      <lastmod>2025-04-06</lastmod>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>https://smive-reparaciones.com/projects/el-dorado</loc>
+      <lastmod>2025-04-06</lastmod>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>https://smive-reparaciones.com/projects/balbin</loc>
+      <lastmod>2025-04-06</lastmod>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>https://smive-reparaciones.com/projects/monte-grande</loc>
+      <lastmod>2025-04-06</lastmod>
       <priority>0.8</priority>
     </url>
   

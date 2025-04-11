@@ -1,36 +1,57 @@
 import emailjs from "@emailjs/browser";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import toast from "react-hot-toast";
 import ReCAPTCHA from "react-google-recaptcha";
 
 function ContactComponent() {
-  // function clearField() {
-  //   document.getElementsByClassName('box').value=''
-  // }
-  const captcha = useRef(null);
-  function onChange() {
-    console.log(captcha.current.getValue());
-  }
   const form = useRef();
+  const captcha = useRef(null);
+  const [isVerified, setIsVerified] = useState(false);
+
+  const onChange = () => {
+    if (captcha.current.getValue()) {
+      setIsVerified(true);
+    }
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
+
+    // Validar que todos los campos tengan datos
+    const formData = new FormData(form.current);
+    const userName = formData.get("user_name").trim();
+    const userEmail = formData.get("user_email").trim();
+    const userPhone = formData.get("user_phone").trim();
+    const message = formData.get("message").trim();
+
+    if (!userName || !userEmail || !userPhone || !message) {
+      toast.error("Todos los campos son obligatorios.");
+      return;
+    }
+
+    // Validar que el captcha esté verificado
+    if (!isVerified) {
+      toast.error("Por favor, verifica el reCAPTCHA.");
+      return;
+    }
 
     emailjs
       .sendForm("service_rt4exlv", "template_os4dk0a", form.current, {
         publicKey: "9UjvSXnthESeN8UI1",
-        // publicKey: "",
       })
       .then(
         () => {
-          toast.success("Mensaje enviado");
-          // console.log("SUCCESS!");
+          toast.success("Mensaje enviado con éxito.");
+          form.current.reset(); // Borra los valores del formulario
+          setIsVerified(false); // Resetea el estado del captcha
+          captcha.current.reset(); // Resetea el captcha visualmente
         },
         (error) => {
-          // console.log("FAILED...", error.text);
-          toast.error("Error", error.text);
+          toast.error("Error al enviar el mensaje: " + error.text);
         }
       );
   };
+
   return (
     <div className="contact-container">
       <section className="contact" id="contact">
@@ -44,39 +65,20 @@ function ContactComponent() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
+
           <form ref={form} onSubmit={sendEmail}>
             <h3>Consultanos</h3>
-            <input
-              type="text"
-              placeholder="Nombre"
-              className="box"
-              name="user_name"
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              className="box"
-              name="user_email"
-            />
-            <input
-              type="number"
-              placeholder="Telefono"
-              className="box"
-              name="user_phone"
-            />
-            <textarea
-              name="message"
-              placeholder="Consulta"
-              className="box"
-              id=""
-              cols="30"
-              rows="10"
-            ></textarea>
+            <input type="text" placeholder="Nombre" className="box" name="user_name" />
+            <input type="email" placeholder="Email" className="box" name="user_email" />
+            <input type="number" placeholder="Telefono" className="box" name="user_phone" />
+            <textarea name="message" placeholder="Consulta" className="box" cols="30" rows="10"></textarea>
+
             <ReCAPTCHA
               ref={captcha}
               sitekey="6LdfFfsqAAAAAE0LnrF5AK_sMqIMG8qYBlKzYfat"
               onChange={onChange}
             />
+
             <input type="submit" value="Enviar" className="btn" />
           </form>
         </div>

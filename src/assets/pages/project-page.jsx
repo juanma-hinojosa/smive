@@ -1,14 +1,3 @@
-// Import Swiper React components
-// import { SwiperSlide, Swiper } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/effect-fade";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
-// import required modules
-// import { Autoplay, EffectFade, Navigation } from "swiper/modules";
 import AboutComponent from "../components/about-component";
 import ProjectComponet from "../components/project-component";
 import { TitleDinamic } from "../js/title-list";
@@ -55,7 +44,14 @@ function ProjectPage() {
           content="SMIVE Refacciones y Mantenimiento. Servicios de Albañileria, pintura, plomeria, techos, impermeabilizacion, gas, construccion en seco."
         />
       </Helmet>
-      <AboutComponent src={VideoNosotros} />
+      <AboutComponent
+        src={VideoNosotros}
+        text="Con un equipo de expertos altamente capacitados,
+                  aseguramos que cada obra no solo cumpla, sino que supere los
+                  estándares de la industria, brindando resultados confiables y
+                  sostenibles a largo plazo. Confíe en SMIVE para construir con
+                  calidad y mantener con efectividad."
+      />
       <ProjectComponet />
     </>
   );

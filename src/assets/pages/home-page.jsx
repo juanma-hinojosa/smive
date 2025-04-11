@@ -4,11 +4,10 @@ import AboutComponent from "../components/about-component";
 import ClientsComponents from "../components/clients-component";
 import ContactComponent from "../components/contact-component";
 import ProjectComponet from "../components/project-component";
-// import SlideReviewComponent from "../components/reviews-component";
 import SlideComponent from "../components/slide-component";
 import { TitleDinamic } from "../js/title-list";
 import ServicesPage from "./services-page";
-import AboutVid from "/images/about-vid.mp4";
+import AboutVid from "/images/about-vid1.mp4";
 
 function HomePage() {
   TitleDinamic("SMIVE");
@@ -17,24 +16,34 @@ function HomePage() {
       <Helmet>
         <meta
           name="description"
-          content="SMIVE Refacciones y Mantenimiento. Servicios de Albañileria, pintura, plomeria, techos, impermeabilizacion, gas"
+          content="SMIVE ofrece servicios integrales de mantenimiento y refacciones para viviendas y edificios. Especializados en plomería, albañilería, revestimiento, pintura, impermeabilización, electricidad, construcción en seco y consultoría. Soluciones confiables y profesionales para tu hogar o empresa."
         />
+
         <meta
           name="keywords"
-          content="SMIVE Refacciones y Mantenimiento. Servicios de Albañileria, pintura, plomeria, techos, impermeabilizacion, gas, construccion en seco"
+          content="mantenimiento hogar, refacciones construcción, plomería, albañilería, revestimiento, pintura, impermeabilización, electricidad, construcción en seco, consultoría construcción, servicios integrales vivienda, SMIVE, mantenimiento edificios"
         />
+
         <meta
           name="category"
-          content="SMIVE Refacciones y Mantenimiento. Servicios de Albañileria, pintura, plomeria, techos, impermeabilizacion, gas"
+          content="Construcción y mantenimiento de viviendas y edificios"
         />
       </Helmet>
       <section className="home" id="home">
         <SlideComponent />
       </section>
 
-      <AboutComponent src={AboutVid} />
+      <AboutComponent
+        src={AboutVid}
+        text="En SMIVE, nos especializamos en ofrecer soluciones integrales de
+            refacciones y mantenimiento que garantizan la durabilidad y
+            eficiencia de sus proyectos de construcción. Nuestro compromiso con
+            la excelencia se refleja en cada detalle, desde la selección de
+            materiales de alta calidad hasta la implementación de técnicas
+            innovadoras. "
+      />
       <ServicesPage />
-      <ProjectComponet />
+      <ProjectComponet limit={6} />
       <ClientsComponents />
 
       {/* <section className="reviews">
